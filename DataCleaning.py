@@ -7,6 +7,10 @@ class DataCleaning:
         self.sensor_data = sensor_data
 
     def clean_data(self):
+        """
+        func: cleans data pandas and gives required dataset in dataframe
+        
+        """
         df = pd.read_csv(self.sensor_data, delimiter="\t")
         required_columns = ["Time", "Sensor 1", "Sensor 2", "Sensor 3", "Sensor 4", "Sensor 5", "Sensor 6", "Sensor 7",
                             "Sensor 8"]
