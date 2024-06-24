@@ -24,7 +24,8 @@ class DataTracking(DataCleaning):
             readings = df[sensor_name].tolist()
             previous_state = 0  # Initialize previous state (0: below, 1: above)
             sensor_states = []
-
+            count = 0
+            count_out = 0
             for i, data in enumerate(readings):
                 # Skip processing of timestamps (already in first column)
                 if i == 0 and df.columns[0] == data:
@@ -41,9 +42,11 @@ class DataTracking(DataCleaning):
                     if current_state:
                         timestamp = df.iloc[i, 0]
                         sensor_states.append(f"Sensor: {sensor_name} - In ({timestamp})")
+                        count = count + 1
                     else:
                         timestamp = df.iloc[i, 0]
                         sensor_states.append(f"Sensor: {sensor_name} - Out ({timestamp})")
+                        count_out = count_out+1
                 previous_state = current_state
 
             # Print only In/Out Times with timestamps for the current sensor
@@ -52,3 +55,5 @@ class DataTracking(DataCleaning):
                 # print("In/Out Times:")
                 for state in sensor_states:
                     print(f"\t{state}")
+            print(count)
+            print(count_out)
