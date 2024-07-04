@@ -9,7 +9,7 @@ t = time.time()
 
 
 #path of the dataset
-sensor_data = r"C:\Users\lenovo.LALITH\Desktop\voptimAI\sample-evonith\VariablesAndSensorsData_2hours.txt"
+sensor_data = r"C:\Users\Abhishek\Desktop\evsl_tracker\VariablesAndSensorsData_2hours.txt"
 
 # Create DataCleaning object :data_cleaner
 data_cleaner = DataCleaning(sensor_data)
