@@ -17,7 +17,7 @@ l.basicConfig(filename='files_tracking.log', filemode='r',
 def main() -> None:
     t = time.time()
     sensor_data = r"C:\Users\Abhishek\Desktop\evsl_tracker\VariablesAndSensorsData_2hours.txt"  #path of the dataset
-    # Create DataCleaning object :data_cleaner
+    # Create DataCleaning object : 
     data_cleaner = DataCleaning(sensor_data)
     # Call clean_data method to get the DataFrame and pass it to DataTracking
     dataframe1 = data_cleaner.clean_data()
@@ -28,11 +28,6 @@ def main() -> None:
     s = time.time()  #source time
     print(s - t)
 
-<<<<<<< HEAD
-=======
-#path of the dataset
-sensor_data = r"C:\Users\Abhishek\Desktop\evsl_tracker\VariablesAndSensorsData_2hours.txt"
->>>>>>> 010afcfcad907c01c11db0c1b1442103e698da74
 
 if __name__ == "__main__":
     main()
