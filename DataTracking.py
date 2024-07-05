@@ -1,59 +1,80 @@
-import pandas as pd
-
 from DataCleaning import DataCleaning
+import logging as l
+'''
+code with the data matching algorithm(have included type hinting)
+has two methods: one for tracking and other one for matching
+TODO:pending task:tracing section
+'''
 
-
+l.basicConfig(
+    level=l.INFO,  # Set logging level (e.g., INFO, WARNING, DEBUG)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Customize log message format
+)
 class DataTracking(DataCleaning):
-    threshold = 0.5
+    threshold: float = 0.5
 
-    def __init__(self, sensor_data):
+    def __init__(self, sensor_data) -> None:
+        """
+        :param sensor_data:
+        reads sensor data
+        """
         super().__init__(sensor_data)
         self.sensor_data = sensor_data
 
-    def print_sensor_states(self, df):
+    def get_sensor_state_transitions(self) -> list[tuple[str, str, float]]:  #tracking
         """
-        Analyzes sensor readings from a DataFrame and prints In/Out transitions with timestamps for each sensor.
+        Analyzes sensor readings and returns a list of sensor state transitions.
 
-        Args:
-            sensor_df (pd.DataFrame): A DataFrame containing sensor data with columns for sensor names and readings.
-            timestamp_col_index (int, optional): The index of the column containing timestamps. Defaults to 0.
-            :param df:
+        Returns:
+            list: A list of tuples containing (sensor_name, state, timestamp).
         """
-
-        for sensor_name in df.columns[1:]:  # Skip timestamp column
-            readings = df[sensor_name].tolist()
-            previous_state = 0  # Initialize previous state (0: below, 1: above)
-            sensor_states = []
-            count = 0
-            count_out = 0
+        sensor_transitions: list = []
+        for sensor_name in self.sensor_data.columns[1:]:
+            readings: list = self.sensor_data[sensor_name].tolist()
+            previous_state: int = 0
             for i, data in enumerate(readings):
                 # Skip processing of timestamps (already in first column)
-                if i == 0 and df.columns[0] == data:
+                if i == 0 and self.sensor_data.columns[0] == data:
                     continue
 
                 try:
-                    current_state = int(float(data) >= self.threshold)  # Convert reading to 0 or 1
+                    current_state: int = int(float(data) >= self.threshold)
                 except ValueError:
                     print(f"Warning: Unexpected non-numeric value in column {sensor_name}")
+                    self.logger.error(f"Sensor data file not found: {self.sensor_data}", exc_info=True)
                     continue
 
-                state_change = current_state ^ previous_state  # XOR detects transition (0^1 or 1^0)
+                state_change: int = current_state ^ previous_state
                 if state_change:
                     if current_state:
-                        timestamp = df.iloc[i, 0]
-                        sensor_states.append(f"Sensor: {sensor_name} - In ({timestamp})")
-                        count = count + 1
+                        timestamp: float = self.sensor_data.iloc[i, 0]
+                        sensor_transitions.append((sensor_name, "In", timestamp))
                     else:
-                        timestamp = df.iloc[i, 0]
-                        sensor_states.append(f"Sensor: {sensor_name} - Out ({timestamp})")
-                        count_out = count_out+1
+                        timestamp = self.sensor_data.iloc[i, 0]
+                        sensor_transitions.append((sensor_name, "Out", timestamp))
                 previous_state = current_state
+        return sensor_transitions
 
-            # Print only In/Out Times with timestamps for the current sensor
-            if sensor_states:
-                print(f"Sensor: {sensor_name}")
-                # print("In/Out Times:")
-                for state in sensor_states:
-                    print(f"\t{state}")
-            print(count)
-            print(count_out)
+    def print_sensor_transitions(self, transitions: list[tuple[str, str, float]]) -> None:  #matching
+        """
+        Prints sensor state transitions in a user-friendly format.
+
+        Args:
+            transitions (list): A list of tuples containing (sensor_name, state, timestamp).
+        """
+        # l.INFO("info msg")
+        if not transitions:
+            print("No sensor state transitions found.")
+            return
+        try:
+            for sensor_name, state, timestamp in transitions:
+                print(f"Sensor number: {sensor_name} - {state}: {timestamp}")
+        except ValueError as e:
+            print(f"Warning: Unexpected non-numeric value ")
+
+    def print_sensor_states(self) -> None:
+        """
+        Calls get_sensor_state_transitions and print_sensor_transitions methods.
+        """
+        transitions = self.get_sensor_state_transitions()
+        self.print_sensor_transitions(transitions)
