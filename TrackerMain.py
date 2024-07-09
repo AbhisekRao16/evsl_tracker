@@ -23,7 +23,7 @@ def main() -> None:
     dataframe1 = data_cleaner.clean_data()
     # Pass the cleaned DataFrame dataframe1 to DataTracking
     data_tracker = DataTracking(dataframe1)
-    #tracker method : it prints sensor states
+    #tracker method : it prints sensor states (call transitions & print fn here itself)
     data_tracker.print_sensor_states()
     s = time.time()  #source time
     print(s - t)
