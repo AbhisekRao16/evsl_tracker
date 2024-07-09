@@ -7,21 +7,25 @@ has two methods: one for tracking and other one for matching
 TODO:pending task:tracing section
 '''
 
+'''
+logger
+'''
 l.basicConfig(
     level=l.INFO,  # Set logging level (e.g., INFO, WARNING, DEBUG)
-    format='%(asctime)s - %(levelname)s - %(message)s'  # Customize log message format
-)
+    format='%(asctime)s - %(levelname)s - %(message)s')  # Customize log message format
 
 
-class DataTracking(DataCleaning):
+class DataTracking:
     threshold: float = 0.5
 
+    '''
+    takes clean data as input
+    '''
     def __init__(self, sensor_data) -> None:
         """
         :param sensor_data:
         reads sensor data
         """
-        super().__init__(sensor_data)
         self.sensor_data = sensor_data
 
     def get_sensor_state_transitions(self) -> list[tuple[str, str, float]]:  #tracking
@@ -59,7 +63,7 @@ class DataTracking(DataCleaning):
         return sensor_transitions
 
     def print_sensor_transitions(self, transitions: list[tuple[str, str, float]]) -> None:  #matching
-        """
+        """=
         Prints sensor state transitions in a user-friendly format.
 
         Args:
