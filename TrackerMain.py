@@ -1,4 +1,3 @@
-
 import time
 from DataCleaning import DataCleaning
 from DataTracking import DataTracking
@@ -7,6 +6,8 @@ import logging as l
 l.basicConfig(filename='files_tracking.log', filemode='r',
               format="%(asctime)s-%(levelname)s-%(message)s",
               level=l.INFO)
+
+
 # l.debug("This is a debug message.")
 # l.info("This is an informational message.")
 # l.warning("This is a warning message.")
@@ -23,7 +24,7 @@ def main() -> None:
     dataframe1 = data_cleaner.clean_data()
     # Pass the cleaned DataFrame dataframe1 to DataTracking
     data_tracker = DataTracking(dataframe1)
-    #tracker method : it prints sensor states (call transitions & print fn here itself)
+    #tracker method : it prints sensor states   (call transitions & print fn here itself)
     data_tracker.print_sensor_states()
     s = time.time()  #source time
     print(s - t)
