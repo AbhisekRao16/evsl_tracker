@@ -1,10 +1,12 @@
 import pandas as pd
 
 import logging as l
+
+
 class DataCleaning:
     def __init__(self, sensor_data) -> None:
         self.df = None
-        self.sensor_data= sensor_data
+        self.sensor_data = sensor_data
         self.logger = l.getLogger(__name__)
 
     def clean_data(self) -> pd.DataFrame:
