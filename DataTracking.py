@@ -4,7 +4,8 @@ import logging as l
 
 '''
 Code with the data matching algorithm (with type hinting)
-Includes two methods: one for tracking(get_sensor_state_transitions()) and the other one for matching(match_found())
+Includes two methods:
+one for tracking(get_sensor_state_transitions()) and the other one for matching(match_products())
 '''
 
 '''
@@ -13,15 +14,11 @@ Logger configuration
 l.basicConfig(
     level=l.INFO,  # Set logging level (e.g., INFO, WARNING, DEBUG)
     filename="files_tracking.log",format='%(asctime)s - %(levelname)s - %(message)s')  # Customize log message format
-
-
 class DataTracking:
     threshold: float = 0.5
-
     '''
     Takes clean data as input
     '''
-
     def __init__(self, sensor_data: pd.DataFrame) -> None:
         """
         :param sensor_data: DataFrame containing sensor data

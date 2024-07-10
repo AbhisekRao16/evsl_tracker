@@ -30,10 +30,12 @@ def main() -> None:
     #         print(f"  - Sensor: {sensor_name}, State: {state}, Timestamp: {timestamp}")
     '''
     part3 of task -->tracing
-    (issue with state_transitions variable)
+    
+    (working)
     
     '''
     match_found = data_tracker.match_products()
+    
     if match_found:
         for key, value in match_found.items():
             print(key, "->", value)
