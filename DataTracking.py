@@ -1,6 +1,7 @@
 from typing import Dict, Tuple, List
 import pandas as pd
 import logging as l
+import numpy as np
 
 '''
 Code with the data matching algorithm (with type hinting)
@@ -13,12 +14,16 @@ Logger configuration
 '''
 l.basicConfig(
     level=l.INFO,  # Set logging level (e.g., INFO, WARNING, DEBUG)
-    filename="files_tracking.log",format='%(asctime)s - %(levelname)s - %(message)s')  # Customize log message format
+    filename="files_tracking.log", 
+    format='%(asctime)s - %(levelname)s - %(message)s')  # Customize log message format
+
+
 class DataTracking:
     threshold: float = 0.5
     '''
     Takes clean data as input
     '''
+
     def __init__(self, sensor_data: pd.DataFrame) -> None:
         """
         :param sensor_data: DataFrame containing sensor data
@@ -26,17 +31,12 @@ class DataTracking:
         """
         self.sensor_data = sensor_data
         self.sensor_transitions: List[Tuple[str, str, float]] = []
-
+        
+        
     def get_sensor_state_transitions(self) -> List[Tuple[str, str, float]]:
-        """
-        Analyzes sensor readings and returns a list of sensor state transitions.
-
-        Returns:
-            list: A list of tuples containing (sensor_name, state, timestamp).
-        """
         sensor_transitions: List[Tuple[str, str, float]] = []
         for sensor_name in self.sensor_data.columns[1:]:
-            readings: List[float] = self.sensor_data[sensor_name].tolist()
+            readings: np.array = np.array(self.sensor_data[sensor_name])
             previous_state: int = 0
             for i, data in enumerate(readings):
                 # Skip processing of timestamps (already in the first column)
@@ -60,7 +60,8 @@ class DataTracking:
 
         self.sensor_transitions = sensor_transitions
         return sensor_transitions
-
+    
+    
     def match_products(self) -> Dict[Tuple[str, float], List[Tuple[str, str, float]]]:
         """
         Matches products based on sensor transitions.
@@ -73,7 +74,7 @@ class DataTracking:
         current_product: Tuple[str, float] = None
 
         for sensor_name, state, timestamp in self.sensor_transitions:
-            l.info(f"Processing transition: {sensor_name}, {state, {timestamp}}")
+            l.info(f"Processing transition: {sensor_name}, {state, {timestamp} }")
             if state == "In":
                 current_product = (sensor_name, timestamp)
                 product_matches[current_product] = [(sensor_name, state, timestamp)]
@@ -81,5 +82,4 @@ class DataTracking:
                 if current_product[0] == sensor_name:
                     product_matches[current_product].append((sensor_name, state, timestamp))
                     current_product = None
-        # print(product_matches)
         return product_matches

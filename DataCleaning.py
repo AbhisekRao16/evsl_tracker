@@ -1,8 +1,5 @@
 import pandas as pd
-
 import logging as l
-
-
 class DataCleaning:
     def __init__(self, sensor_data) -> None:
         self.df = None
