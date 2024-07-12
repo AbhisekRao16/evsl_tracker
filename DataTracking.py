@@ -32,33 +32,39 @@ class DataTracking:
         self.sensor_data = sensor_data
         self.sensor_transitions: List[Tuple[str, str, float]] = []
         
-        
-    def get_sensor_state_transitions(self) -> List[Tuple[str, str, float]]:
+    def get_sensor_state_transitions(self)->List[Tuple[str, str, float]]:
+        """ uses numerical array(np.array) which is used in place of old list[] based storage (optimized version)
+
+        Returns:
+            list  [str,str,int]
+        """        
         sensor_transitions: List[Tuple[str, str, float]] = []
+        timestamps:np.array = np.array(self.sensor_data.iloc[:, 0])
+
         for sensor_name in self.sensor_data.columns[1:]:
-            readings: np.array = np.array(self.sensor_data[sensor_name])
-            previous_state: int = 0
-            for i, data in enumerate(readings):
-                # Skip processing of timestamps (already in the first column)
-                if i == 0:
-                    continue
+            readings:np.array = np.array(self.sensor_data[sensor_name])
 
-                try:
-                    current_state: int = int(float(data) >= self.threshold)
-                except ValueError:
-                    l.error(f"Warning: Unexpected non-numeric value in column {sensor_name}")
-                    continue
+            # Handle non-numeric values and convert to boolean array
+            try:
+                current_states:np.array = readings.astype(float) >= self.threshold
+            except ValueError:
+                l.error(f"Warning: Unexpected non-numeric value in column {sensor_name}")
+                continue
 
-                state_change: int = current_state ^ previous_state
-                if state_change:
-                    timestamp: float = self.sensor_data.iloc[i, 0]
-                    if current_state:
-                        sensor_transitions.append((sensor_name, "In", timestamp))
-                    else:
-                        sensor_transitions.append((sensor_name, "Out", timestamp))
-                previous_state = current_state
+            # Detect changes in state
+            state_changes = np.diff(current_states.astype(int)) #converts to int value(bool to int )
+            in_indices = np.where(state_changes == 1)[0] + 1
+            out_indices = np.where(state_changes == -1)[0] + 1
 
-        self.sensor_transitions = sensor_transitions
+            # Append 'In' transitions
+            for i in in_indices:
+                sensor_transitions.append((sensor_name, "In", timestamps[i]))
+
+            # Append 'Out' transitions
+            for i in out_indices:
+                sensor_transitions.append((sensor_name, "Out", timestamps[i]))
+
+            self.sensor_transitions = sensor_transitions
         return sensor_transitions
     
     
