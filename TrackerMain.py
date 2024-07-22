@@ -44,12 +44,13 @@ def main() -> None:
     # final_df.to_csv(r"C:\Users\Abhishek\Desktop\evsl_tracker\last_df_modified.csv",index=False)
     # pd.DataFrame(filtered_output.keys()).to_csv(r"C:\Users\Abhishek\Desktop\evsl_tracker\last.csv",index=False)
     # sensor_states_df = pd.DataFrame(columns=[])
-    if not match_found.empty:
-        for key, value in match_found.items():
-            print(f"{key} -> {value}")
-    else: 
-        print("match not found")
-    
+    filtered_op=data_tracker.clear_residue()
+    print(filtered_op)
+    # if not match_found.empty:
+    #     for key, value in match_found.items():
+    #         print(f"{key} -> {value}")
+    # else: 
+    #     print("match not found")
     stop = time.time()  #source time5
     print(stop - start)
 
