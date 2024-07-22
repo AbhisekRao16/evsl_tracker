@@ -4,11 +4,11 @@ import numpy as np
 
 class DataTracking:
     threshold: float = 0.5
-
     def __init__(self, sensor_data: pd.DataFrame) -> None:
         self.sensor_data = sensor_data
         self.sensor_transitions: list = []
         self.product_matches: dict = {}
+        self.df=None
 
     def get_sensor_state_transitions(self) -> list:
         sensor_transitions: list = []
@@ -91,8 +91,8 @@ class DataTracking:
         df = df.sort_values(by="Product")
         df.to_csv(r"C:\Users\Abhishek\Desktop\evsl_tracker\evsl_tracker_output_excel\evsl_out.csv", index=False, date_format='%Y-%m-%d %H:%M:%S.%f')
         self.product_matches = product_matches
-
-        print(df.head())
+        self.df=df
+        print(self.df.head())
 
         if entry_time_errors:
             print("Entry time errors:")
@@ -114,3 +114,25 @@ class DataTracking:
             max_len = max(len(l) for l in self.product_matches.values())
 
         return {key: value + [fill_value] * (max_len - len(value)) for key, value in self.product_matches.items()}
+    
+   
+    def clear_residue(self):
+    # Assuming the DataFrame has columns for entry and exit times of each sensor
+        '''
+        filters out the values with smaller/negligible time difference
+        returns: dataframe
+        '''
+        entry_columns = [col for col in self.df.columns if 'in' in col]
+        exit_columns = [col for col in self.df.columns if 'out' in col]
+
+        for entry_col, exit_col in zip(entry_columns, exit_columns):
+            self.df[entry_col] = pd.to_datetime(self.df[entry_col])
+            self.df[exit_col] = pd.to_datetime(self.df[exit_col])
+            
+            # Calculate the time difference in seconds
+            time_diff = (self.df[exit_col] - self.df[entry_col]).dt.total_seconds()
+            
+            # Filter out rows where the time difference is less than 1 second
+            self.df = self.df[time_diff >= 1]
+            self.df.to_csv(r"C:\Users\Abhishek\Desktop\evsl_tracker\evsl_tracker_output_excel\final_filter.csv",index=False)   
+        return self.df
