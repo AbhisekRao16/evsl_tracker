@@ -121,6 +121,7 @@ class DataTracking:
         '''
         filters out the values with smaller/negligible time difference
         returns: dataframe
+        print statemnet is used just to check the last residue values
         '''
         entry_columns = [col for col in self.df.columns if 'in' in col]
         exit_columns = [col for col in self.df.columns if 'out' in col]
