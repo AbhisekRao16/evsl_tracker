@@ -1,11 +1,13 @@
 import pandas as pd
-import logging as l
+import logging as logging
 
 class DataCleaning:
     def __init__(self, sensor_data) -> None:
         self.df = None
         self.sensor_data = sensor_data
-        self.logger = l.getLogger(__name__)
+        
+        self.logger = logging.getLogger(__name__)
+
 
     def clean_data(self) -> pd.DataFrame:
         """
@@ -20,11 +22,10 @@ class DataCleaning:
                                 "Sensor 5", "Sensor 6", "Sensor 7", "Sensor 8"]
             df = df[required_columns]
             self.df = df
-
             return self.df
         except FileNotFoundError as e:
-            self.l.error(f"Sensor data file not found: {self.sensor_data}", exc_info=True)
+            self.logger.error(f"Sensor data file not found: {self.sensor_data}", exc_info=True)
             raise
         except pd.errors.ParserError as e:
-            self.l.error(f"Error parsing sensor data: {e}", exc_info=True)
+            self.logger.error(f"Error parsing sensor data: {e}", exc_info=True)
             raise ValueError(f"Error parsing sensor data: {e}") from e
