@@ -27,7 +27,7 @@ logging_config = {
             "level": "INFO",
             "formatter": "simple",
             "filename": "logs/sample-logs/main.log",
-            "maxBytes": 1000000,
+            "maxBytes": 1000,
             "backupCount": 5,
         },
     },
@@ -63,8 +63,8 @@ def main() -> None:
     '''
     #tracker method : it prints sensor states   (call transitions & print fn here itself)
     transitions:list = data_tracker.get_sensor_state_transitions()
-    for sensor_name, state, timestamp in transitions:
-            print(f"  - Sensor: {sensor_name}, State: {state}, Timestamp: {timestamp}")
+    # for sensor_name, state, timestamp in transitions:
+    #         print(f"  - Sensor: {sensor_name}, State: {state}, Timestamp: {timestamp}")
             
     '''
     part3 of task -->tracing
