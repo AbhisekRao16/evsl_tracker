@@ -4,10 +4,10 @@ import numpy as np
 
 class DataTracking:
     threshold: float = 0.5
-    def __init__(self, sensor_data: pd.DataFrame) :
+    def __init__(self, sensor_data: pd.DataFrame) : #dataframe from the datacleaning class
         self.sensor_data = sensor_data
-        self.sensor_transitions: list = []
-        self.product_matches: dict = {}
+        self.sensor_transitions: list = [] #list of transition for products based on time : In and Out
+        self.product_matches: dict = {} #key: value pair : for a particular sensor In and Out are captured
         self.df=None
         self.l = l.getLogger(__name__)  # <-- add this
         self.l.setLevel(l.INFO)
@@ -15,8 +15,27 @@ class DataTracking:
 
     def __str__(self):
         return str(self.sensor_data)
-    
+    """
+    for get_sensor_state_transitions()
+    Detect state changes (In/Out) for each sensor over time.
+
+    This method:
+        - Converts the first column of self.sensor_data to datetime.
+        - Thresholds each sensor column to ON/OFF using self.threshold.
+        - Identifies times when a sensor switches ON ("In") or OFF ("Out").
+        - Stores all transitions as tuples of (sensor_name, state, timestamp).
+        - Sorts transitions chronologically and saves to self.sensor_transitions.
+
+    Returns:
+        list:
+            A list of tuples in the form (sensor_name, "In"/"Out", timestamp).
+
+    Notes:
+        - If non-numeric values are present in a sensor column, that column is skipped.
+        - If the first reading is ON, an initial "In" transition is added at the first timestamp.
+    """
     def get_sensor_state_transitions(self) -> list:
+        
             sensor_transitions: list = []
 
             # More robust timestamp parsing
@@ -58,6 +77,23 @@ class DataTracking:
 
 
     def match_products(self) -> pd.DataFrame:
+        """
+    Filter out products with negligible sensor times.
+
+    This method:
+        - Converts all in/out columns of self.df to datetime.
+        - Calculates time differences (exit - entry) for each sensor.
+        - Removes rows where time difference is less than 1 second.
+        - Saves the filtered DataFrame to CSV and updates self.df.
+
+    Returns:
+        pd.DataFrame:
+            Filtered DataFrame containing only valid rows.
+
+    Notes:
+        - Assumes self.df is already created by match_products().
+        - Keeps only rows with realistic In/Out durations.
+    """
         product_matches: dict = {}
         current_product: dict = {}
         previous_entry_time = None

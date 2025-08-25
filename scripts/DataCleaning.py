@@ -22,7 +22,6 @@ class DataCleaning:
             df["Sensor 1"] = df["Sensor 1"].round().astype("Int64") #added this as some values got null or float values intead of integer
             self.df = df
             self.df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\clean.csv")
-            
             # print(df.dtypes)
             return self.df
         except FileNotFoundError as e:
