@@ -1,12 +1,11 @@
-Here’s a complete **README.md** for your project, tailored to the code you shared:
+
 
 ---
 
 # EVSL Tracker
 
 Track sensor state transitions (In/Out) and match product movement using Python.
-
-## **Overview**
+--------------------------------------------------------------------------------------
 
 This project processes raw sensor data, cleans it, detects sensor state transitions, and matches products across multiple sensors. The results are stored in a structured CSV for further analysis.
 
@@ -47,23 +46,6 @@ evsl_tracker/
 │   └── fileLog.log       # Runtime logs
 │
 └── README.md             # Project documentation
-```
-
----
-
-## **Installation**
-
-### **1. Clone this repository**
-
-```bash
-git clone https://github.com/yourusername/evsl_tracker.git
-cd evsl_tracker
-```
-
-### **2. Install dependencies**
-
-```bash
-pip install pandas numpy
 ```
 
 ---
