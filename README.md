@@ -4,7 +4,7 @@
 
 # EVSL Tracker
 
-Track sensor state transitions (In/Out) and match product movement using Python.
+Track sensor state transitions (In/Out) and match product movement
 --------------------------------------------------------------------------------------
 
 This project processes raw sensor data, cleans it, detects sensor state transitions, and matches products across multiple sensors. The results are stored in a structured CSV for further analysis.
