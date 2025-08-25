@@ -16,7 +16,7 @@ l.basicConfig(filename=log_path,filemode='w',format="%(asctime)s-%(levelname)s-%
 def main() -> None:
     start = time.time()
     sensor_data = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\dataset\VariablesAndSensorsData_2hours.txt"  #path of the dataset
-    output_file=r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\sample_1.csv"                        #output file path for final readings
+    # output_file=r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\sample_1.csv"                        #output file path for final readings
     '''
     part1 of task--> cleaning
     
@@ -54,13 +54,8 @@ def main() -> None:
             print(f"{key} -> {value}")
     else:
         print("match not found")
-    match_found.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\abhi.csv",index=False,
-    date_format="%Y-%m-%d %H:%M:%S")
-    # filtered_output:dict=data_tracker.pad_lists()
-    # final_df=pd.DataFrame(filtered_output)
-    # print(final_df.head())
-    # final_df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\abhishek.csv",index=False)
-    # pd.DataFrame(filtered_output.keys()).to_csv(r"C:\Users\Abhishek\Desktop\evsl_tracker\last.csv",index=False)
+    match_found.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\abhi.csv",index=False,date_format="%Y-%m-%d %H:%M:%S")
+
     # sensor_states_df = pd.DataFrame(columns=[])
     # filtered_op=data_tracker.clear_residue()
     # print(filtered_op)

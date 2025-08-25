@@ -110,7 +110,7 @@ class DataTracking:
 
         df = pd.DataFrame(data, columns=columns)
         df = df.sort_values(by="Product")
-        df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\evsl_out.csv", index=False, date_format='%Y-%m-%d %H:%M:%S.%f')
+        # df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\evsl_out.csv", index=False, date_format='%Y-%m-%d %H:%M:%S.%f')
         self.product_matches = product_matches
         self.df=df
         print(self.df.head())

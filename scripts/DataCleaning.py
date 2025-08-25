@@ -3,7 +3,7 @@ import logging as l
 
 class DataCleaning:
     def __init__(self, sensor_data) -> None:
-        self.df = None
+        self.df = None #drop and add
         self.sensor_data = sensor_data
         self.l = l.getLogger(__name__)
 
