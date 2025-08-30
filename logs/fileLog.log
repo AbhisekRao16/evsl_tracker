@@ -1,8 +1,695 @@
-2025-08-25 23:28:57,067-INFO-Processing sensor: Sensor 1
-2025-08-25 23:28:57,244-INFO-Processing sensor: Sensor 2
-2025-08-25 23:28:57,260-INFO-Processing sensor: Sensor 3
-2025-08-25 23:28:57,275-INFO-Processing sensor: Sensor 4
-2025-08-25 23:28:57,291-INFO-Processing sensor: Sensor 5
-2025-08-25 23:28:57,291-INFO-Processing sensor: Sensor 6
-2025-08-25 23:28:57,307-INFO-Processing sensor: Sensor 7
-2025-08-25 23:28:57,322-INFO-Processing sensor: Sensor 8
+2025-08-30 13:45:43,727-INFO-Processing sensor: Sensor 1
+2025-08-30 13:45:43,747-INFO-Processing sensor: Sensor 2
+2025-08-30 13:45:43,758-INFO-Processing sensor: Sensor 3
+2025-08-30 13:45:43,778-INFO-Processing sensor: Sensor 4
+2025-08-30 13:45:43,788-INFO-Processing sensor: Sensor 5
+2025-08-30 13:45:43,806-INFO-Processing sensor: Sensor 6
+2025-08-30 13:45:43,814-INFO-Processing sensor: Sensor 7
+2025-08-30 13:45:43,832-INFO-Processing sensor: Sensor 8
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T06:52:57.070000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T06:53:03.000000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T06:54:05.780000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T06:54:08.200000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T06:54:09.650000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T06:54:09.830000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T06:55:15.540000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T06:57:04.790000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T06:57:06.670000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T06:57:08.690000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T06:57:08.690000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T06:58:14.620000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T06:58:23.140000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T06:58:35.330000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T06:58:37.360000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T06:58:42.020000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T06:58:51.680000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T06:59:15.150000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:00:15.970000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:00:17.630000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:00:19.170000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:00:19.380000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:01:24.910000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:03:12.800000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:03:15.270000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:03:17.960000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:03:17.960000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:04:22.650000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:04:31.340000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:04:43.970000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:04:47.210000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:04:51.740000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:04:59.890000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:05:23.670000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:06:22.620000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:06:23.360000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:06:27.070000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:06:27.070000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:07:29.770000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:09:18.500000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:09:21.250000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:09:22.240000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:09:22.700000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:10:28.830000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:10:37.150000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:10:49.100000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:10:51.860000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:10:55.720000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:11:05.560000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:11:29.390000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:12:28.100000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:12:28.990000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:12:32.180000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:12:32.180000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:13:36.140000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:15:26.280000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:15:28.200000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:15:30.410000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:15:30.410000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:16:36.430000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:16:46.410000000 - 
+2025-08-30 13:45:43,880-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:16:58.100000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:16:59.540000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:16:59.580000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:16:59.790000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:16:59.850000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:16:59.880000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:17:03.550000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:17:14.510000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:17:37.980000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:18:39.430000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:18:40.320000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:18:43.270000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:18:43.270000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:19:48.370000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:21:38.900000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:21:39.470000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:21:42.710000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:21:42.710000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:22:47.970000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:22:48.800000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:22:49.050000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:22:58.330000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:23:10.390000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:23:12.040000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:23:12.080000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:23:12.110000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:23:15.720000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:23:26.900000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:23:50.710000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:24:52.360000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:24:52.890000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:24:56.350000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:24:56.350000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:25:59.940000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:27:50.290000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:27:51.090000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:27:55.040000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:27:55.040000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:28:57.850000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:29:08.910000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:29:20.970000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:29:25.940000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:29:26.580000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:29:37.490000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:30:01.360000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:30:56.780000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:31:01.030000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:31:01.570000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:31:01.880000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:32:06.750000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:33:54.720000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:33:57.510000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:33:58.880000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:33:59.150000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:35:02.830000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:35:03.680000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:35:05.620000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:35:06.750000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:35:06.750000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:35:13.830000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:35:25.880000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:35:27.290000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:35:27.480000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:35:27.500000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:35:30.930000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:35:42.420000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:36:06.660000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:36:12.790000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:37:56.590000000 - 
+2025-08-30 13:45:43,888-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:37:59.430000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:38:00.540000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:38:01.070000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:38:05.500000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:38:07.690000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:38:10.110000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:38:10.110000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:39:06.930000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:39:07.560000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:39:07.780000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:39:15.050000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:39:16.560000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:39:28.680000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:39:30.320000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:39:34.250000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:39:45.170000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:40:08.640000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:41:04.900000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:41:05.080000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:41:09.070000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:41:09.070000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:41:13.360000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:41:14.140000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:41:17.310000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:41:17.310000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:42:12.840000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:42:21.230000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:42:21.360000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:42:33.350000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:42:35.260000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:42:39.070000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:42:50.000000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:43:13.370000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:44:09.850000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:44:12.490000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:44:14.470000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:44:14.470000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:44:19.600000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:44:21.300000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:44:24.030000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:44:24.030000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:45:20.600000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:45:28.970000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:45:28.980000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:45:41.350000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:45:43.310000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:45:48.480000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:45:57.440000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:46:20.820000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:47:19.640000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:47:20.200000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:47:23.870000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:47:23.870000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:47:28.130000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:47:28.740000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:47:29.480000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:47:32.970000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:48:27.970000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:48:35.090000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:48:35.350000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:48:47.460000000 - 
+2025-08-30 13:45:43,896-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:48:48.940000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:48:48.990000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:48:49.020000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:48:52.660000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:48:52.740000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:48:52.790000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:49:03.890000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:49:27.360000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:50:27.410000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:50:28.680000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:50:31.790000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:50:31.790000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:50:35.920000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:50:36.100000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:50:37.370000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:50:40.770000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:51:35.350000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:51:42.880000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:51:43.480000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:51:54.950000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:51:56.870000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:52:00.420000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:52:11.180000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:52:34.590000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:53:29.300000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:53:32.460000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:53:33.530000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:53:34.020000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:53:37.750000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:53:41.080000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:53:42.000000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:53:42.520000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:54:40.130000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:54:40.570000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:54:41.340000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:54:48.110000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:54:48.350000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:55:00.460000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:55:02.390000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:55:06.840000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:55:16.900000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:55:40.260000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:56:34.700000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:56:37.780000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:56:40.970000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:56:40.970000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:56:45.180000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:56:46.110000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:56:49.090000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:56:49.090000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T07:57:45.640000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T07:57:53.230000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T07:57:53.630000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T07:58:05.750000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:58:08.080000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:58:08.210000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T07:58:08.250000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T07:58:12.000000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T07:58:22.170000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T07:58:45.640000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T07:59:41.690000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T07:59:41.710000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T07:59:43.170000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T07:59:43.510000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T07:59:51.600000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T07:59:52.600000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T07:59:56.100000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T07:59:56.100000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:00:49.880000000 - 
+2025-08-30 13:45:43,904-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:00:58.740000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:01:00.130000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:01:10.800000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:01:12.000000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:01:15.680000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:01:26.940000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:01:50.380000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:02:48.200000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:02:49.200000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:02:52.020000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:02:52.020000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:03:56.760000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:04:05.270000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:04:17.800000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:04:21.580000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:04:25.890000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:04:34.130000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:04:55.440000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:04:57.190000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:04:58.050000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:04:59.750000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:04:59.750000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:06:05.510000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:07:58.860000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:08:00.210000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:08:03.380000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:08:03.380000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:08:29.990000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:08:31.450000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:08:34.620000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:08:34.620000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:09:07.060000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:09:26.950000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:09:27.500000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:09:27.660000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:09:27.810000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:09:33.540000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:09:38.380000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:09:41.720000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:09:44.990000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:09:49.840000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:10:05.260000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:10:28.560000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:11:27.140000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:11:29.840000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:11:30.970000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:11:31.570000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:11:36.860000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:11:38.430000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:11:40.120000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:11:40.120000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:12:38.280000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:12:45.690000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:12:46.590000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:12:58.770000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:12:59.530000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:12:59.610000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:12:59.960000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:13:03.680000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:13:14.980000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:13:38.510000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:14:30.690000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:14:33.210000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:14:34.220000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:14:34.680000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:14:44.420000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:14:45.200000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:14:45.830000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:14:46.410000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:15:40.990000000 - 
+2025-08-30 13:45:43,912-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:15:49.390000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:15:51.940000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:16:02.030000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:16:03.020000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:16:06.900000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:16:17.750000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:16:41.280000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:17:38.660000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:17:42.780000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:17:42.890000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:17:43.370000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:17:47.090000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:17:50.320000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:17:51.070000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:17:51.610000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:18:49.290000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:18:57.010000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:18:57.760000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:19:08.560000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:19:24.850000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:19:48.600000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:20:46.220000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:20:49.080000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:20:51.330000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:20:51.330000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:20:57.420000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:20:58.610000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:20:59.530000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:21:00.120000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:21:56.400000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:22:05.500000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:22:05.700000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:22:18.620000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:22:18.880000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:22:22.250000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:22:35.260000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:22:57.640000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:23:59.310000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:23:59.730000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:24:02.940000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:24:02.940000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:24:07.390000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:24:08.080000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:24:11.070000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:24:11.070000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:25:06.820000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:25:14.520000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:25:15.530000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:25:26.680000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:25:28.330000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:25:32.560000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:25:42.550000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:26:07.910000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:27:01.870000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:27:04.490000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:27:05.880000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:27:06.130000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:27:15.140000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:27:15.600000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:27:18.610000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:27:18.610000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:28:11.930000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:28:20.500000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:28:23.030000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:28:32.640000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:28:34.100000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:28:37.680000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:28:48.810000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:29:13.260000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:30:12.910000000 - 
+2025-08-30 13:45:43,920-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:30:13.220000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:30:16.750000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:30:16.750000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:31:20.110000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:31:29.030000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:31:40.970000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:31:42.380000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:31:46.140000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:31:57.580000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:32:20.690000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:38:07.350000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:38:10.410000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:38:11.400000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:38:11.940000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:39:17.190000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:41:08.530000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:41:11.120000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:41:12.530000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:41:13.120000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:41:28.750000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:41:33.080000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:41:37.220000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:41:37.220000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:42:18.690000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:42:27.360000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:42:38.840000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:42:39.720000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:42:41.360000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:42:41.420000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:42:41.450000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:42:45.240000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:42:58.170000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:43:21.830000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:44:29.990000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:44:31.810000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:44:34.330000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:44:34.330000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:45:08.180000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:45:09.430000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:45:12.010000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:45:12.010000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:45:39.260000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:45:46.760000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:45:58.810000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:46:00.140000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:46:00.270000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:46:00.310000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:46:04.050000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:46:15.780000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:46:17.030000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:46:38.820000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:48:09.370000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:48:10.140000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:48:10.600000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:48:11.180000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:48:14.570000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:48:17.310000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:48:18.780000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:48:18.950000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:49:19.840000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:49:24.570000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:49:26.080000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:49:38.520000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:49:41.940000000 - 
+2025-08-30 13:45:43,928-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:49:43.730000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 2, State: In, Timestamp: 2022-11-04T08:49:54.480000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 2, State: Out, Timestamp: 2022-11-04T08:50:18.090000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 8, State: Out, Timestamp: 2022-11-04T08:51:18.060000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 7, State: Out, Timestamp: 2022-11-04T08:51:20.800000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 6, State: Out, Timestamp: 2022-11-04T08:51:21.950000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 5, State: Out, Timestamp: 2022-11-04T08:51:22.420000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 8, State: In, Timestamp: 2022-11-04T08:51:33.650000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 7, State: In, Timestamp: 2022-11-04T08:51:36.510000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 6, State: In, Timestamp: 2022-11-04T08:51:37.550000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 5, State: In, Timestamp: 2022-11-04T08:51:38.150000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 4, State: Out, Timestamp: 2022-11-04T08:52:28.660000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 3, State: In, Timestamp: 2022-11-04T08:52:36.720000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 4, State: In, Timestamp: 2022-11-04T08:52:43.320000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:52:48.320000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 3, State: Out, Timestamp: 2022-11-04T08:52:48.850000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:52:52.030000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 1, State: In, Timestamp: 2022-11-04T08:52:52.050000000 - 
+2025-08-30 13:45:43,936-INFO-  - Sensor: Sensor 1, State: Out, Timestamp: 2022-11-04T08:52:52.090000000 - 
+2025-08-30 13:45:43,952-INFO-Product -> 0        1
+1        2
+2        3
+3        4
+4        5
+      ... 
+236    237
+237    238
+238    239
+239    240
+240    241
+Name: Product, Length: 241, dtype: int64
+2025-08-30 13:45:43,960-INFO-Sensor 8 in -> 0     2022-11-04 06:54:05.780
+1     2022-11-04 07:00:15.970
+2     2022-11-04 07:06:23.360
+3     2022-11-04 07:12:28.100
+4     2022-11-04 07:18:39.430
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 8 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,960-INFO-Sensor 8 out -> 0     2022-11-04 06:57:04.790
+1     2022-11-04 07:03:12.800
+2     2022-11-04 07:09:18.500
+3     2022-11-04 07:15:26.280
+4     2022-11-04 07:21:38.900
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 8 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,960-INFO-Sensor 7 in -> 0     2022-11-04 06:54:08.200
+1     2022-11-04 07:00:17.630
+2     2022-11-04 07:06:22.620
+3     2022-11-04 07:12:28.990
+4     2022-11-04 07:18:40.320
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 7 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,960-INFO-Sensor 7 out -> 0     2022-11-04 06:57:06.670
+1     2022-11-04 07:03:15.270
+2     2022-11-04 07:09:21.250
+3     2022-11-04 07:15:28.200
+4     2022-11-04 07:21:39.470
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 7 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,960-INFO-Sensor 6 in -> 0     2022-11-04 06:54:09.650
+1     2022-11-04 07:00:19.170
+2     2022-11-04 07:06:27.070
+3     2022-11-04 07:12:32.180
+4     2022-11-04 07:18:43.270
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 6 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,960-INFO-Sensor 6 out -> 0     2022-11-04 06:57:08.690
+1     2022-11-04 07:03:17.960
+2     2022-11-04 07:09:22.240
+3     2022-11-04 07:15:30.410
+4     2022-11-04 07:21:42.710
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 6 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 5 in -> 0     2022-11-04 06:54:09.830
+1     2022-11-04 07:00:19.380
+2     2022-11-04 07:06:27.070
+3     2022-11-04 07:12:32.180
+4     2022-11-04 07:18:43.270
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 5 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 5 out -> 0     2022-11-04 06:57:08.690
+1     2022-11-04 07:03:17.960
+2     2022-11-04 07:09:22.700
+3     2022-11-04 07:15:30.410
+4     2022-11-04 07:21:42.710
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 5 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 4 in -> 0     2022-11-04 06:55:15.540
+1     2022-11-04 07:01:24.910
+2     2022-11-04 07:07:29.770
+3     2022-11-04 07:13:36.140
+4     2022-11-04 07:19:48.370
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 4 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 4 out -> 0     2022-11-04 06:58:14.620
+1     2022-11-04 07:04:22.650
+2     2022-11-04 07:10:28.830
+3     2022-11-04 07:16:36.430
+4     2022-11-04 07:22:47.970
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 4 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 3 in -> 0     2022-11-04 06:58:23.140
+1     2022-11-04 07:04:31.340
+2     2022-11-04 07:10:37.150
+3     2022-11-04 07:16:46.410
+4     2022-11-04 07:22:58.330
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 3 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,968-INFO-Sensor 3 out -> 0     2022-11-04 06:58:35.330
+1     2022-11-04 07:04:43.970
+2     2022-11-04 07:10:49.100
+3     2022-11-04 07:16:58.100
+4     2022-11-04 07:23:10.390
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 3 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,976-INFO-Sensor 2 in -> 0     2022-11-04 06:52:57.070
+1     2022-11-04 06:58:51.680
+2     2022-11-04 07:04:59.890
+3     2022-11-04 07:11:05.560
+4     2022-11-04 07:17:14.510
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 2 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,976-INFO-Sensor 2 out -> 0     2022-11-04 06:53:03.000
+1     2022-11-04 06:59:15.150
+2     2022-11-04 07:05:23.670
+3     2022-11-04 07:11:29.390
+4     2022-11-04 07:17:37.980
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 2 out, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,976-INFO-Sensor 1 in -> 0     2022-11-04 06:58:37.360
+1     2022-11-04 07:04:47.210
+2     2022-11-04 07:10:51.860
+3     2022-11-04 07:16:59.540
+4     2022-11-04 07:16:59.790
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 1 in, Length: 241, dtype: datetime64[ns]
+2025-08-30 13:45:43,976-INFO-Sensor 1 out -> 0     2022-11-04 06:58:42.020
+1     2022-11-04 07:04:51.740
+2     2022-11-04 07:10:55.720
+3     2022-11-04 07:16:59.580
+4     2022-11-04 07:16:59.850
+                ...          
+236                       NaT
+237                       NaT
+238                       NaT
+239                       NaT
+240                       NaT
+Name: Sensor 1 out, Length: 241, dtype: datetime64[ns]

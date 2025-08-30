@@ -149,7 +149,7 @@ class DataTracking:
         # df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\evsl_out.csv", index=False, date_format='%Y-%m-%d %H:%M:%S.%f')
         self.product_matches = product_matches
         self.df=df
-        print(self.df.head())
+        # print(self.df.head())
 
         if entry_time_errors:
             print("Entry time errors:")
@@ -163,23 +163,24 @@ class DataTracking:
 
         return df
     
-    # def clear_residue(self):
-    # # Assuming the DataFrame has columns for entry and exit times of each sensor
-    #     '''
-    #     filters out the values with smaller/negligible time difference
-    #     returns: dataframe
-    #     '''
-    #     entry_columns = [col for col in self.df.columns if 'in' in col]
-    #     exit_columns = [col for col in self.df.columns if 'out' in col]
+    def clear_residue(self)->pd.DataFrame:
+    # Assuming the DataFrame has columns for entry and exit times of each sensor
+        '''
+        filters out the values with smaller/negligible time difference
+        returns: dataframe
+        '''
+        entry_columns = [col for col in self.df.columns if 'in' in col]
+        exit_columns = [col for col in self.df.columns if 'out' in col]
 
-    #     for entry_col, exit_col in zip(entry_columns, exit_columns):
-    #         self.df[entry_col] = pd.to_datetime(self.df[entry_col])
-    #         self.df[exit_col] = pd.to_datetime(self.df[exit_col])
+        for entry_col, exit_col in zip(entry_columns, exit_columns):
+            self.df = self.df.copy()
+            self.df[entry_col] = pd.to_datetime(self.df[entry_col])
+            self.df[exit_col] = pd.to_datetime(self.df[exit_col])
             
-    #         # Calculate the time difference in seconds
-    #         time_diff = (self.df[exit_col] - self.df[entry_col]).dt.total_seconds()
+            # Calculate the time difference in seconds
+            time_diff = (self.df[exit_col] - self.df[entry_col]).dt.total_seconds()
             
-    #         # Filter out rows where the time difference is less than 1 second
-    #         self.df = self.df[time_diff >= 1]
-    #         self.df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\final_filter.csv",index=False)
-    #     return self.df
+            # Filter out rows where the time difference is less than 1 second
+            self.df = self.df[time_diff >= 1]
+            # self.df.to_csv(r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\final_filter_check.csv",index=False)
+        return self.df
