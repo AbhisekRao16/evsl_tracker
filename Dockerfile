@@ -1,5 +1,5 @@
 #image of python (official)
-FROM python:3.7 
+FROM python:3.7
 #specify working directory inside the container :-/app
 WORKDIR /app
 #copy contents :- all first dot:-source, second dot:- location/desination

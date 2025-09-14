@@ -52,7 +52,7 @@ def create_final_output_task(data_tracker: DataTracking)->pd.DataFrame:
     filtered_op.to_csv(output_path, index=False, date_format="%Y-%m-%d %H:%M:%S")
     return filtered_op
 
-@flow(name="evsl-tracker-flow")
+@flow(name="evsl-tracker-flow",retries=2)
 def main():
     start = time.time()
     df = clean_data_task(sensor_data_path)
