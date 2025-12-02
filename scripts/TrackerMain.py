@@ -26,7 +26,7 @@ def clean_data_task(data_cleaner:DataCleaning) -> pd.DataFrame:
     return df
 
 @task
-def track_transitions_task(data_tracker:DataTracking)-> list:
+def track_transitions_task(data_tracker:DataTracking)-> DataTracking:
     # data_tracker = DataTracking(df) #object creation
     transitions = data_tracker.get_sensor_state_transitions()
     for sensor_name, state, timestamp in transitions:
@@ -35,7 +35,7 @@ def track_transitions_task(data_tracker:DataTracking)-> list:
 
 @task
 def match_and_trace_task(data_tracker: DataTracking) -> pd.DataFrame:
-    match_found = data_tracker.match_products() #object creation
+    match_found = data_tracker.match_products()
     if not match_found.empty:
         for key, value in match_found.items():
             l.info(f"{key} -> {value}")
@@ -55,12 +55,12 @@ def create_final_output_task(data_tracker: DataTracking)->pd.DataFrame:
 @flow(name="evsl-tracker-flow",retries=2)
 def main():
     start = time.time()
-    data_cleaner = DataCleaning(sensor_data_path)
+    data_cleaner = DataCleaning(sensor_data_path)#object creation
     df = clean_data_task(data_cleaner)
-    data_tracker = DataTracking(df)
-    data_tracker = track_transitions_task(data_tracker)
-    match_and_trace_task(data_tracker)
-    create_final_output_task(data_tracker)
+    data_tracker = DataTracking(df)#object creation
+    tracker = track_transitions_task(data_tracker)
+    match_and_trace_task(tracker)
+    create_final_output_task(tracker)
     stop = time.time()
     print(f"batch processing time: {stop - start}")
 
