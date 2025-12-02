@@ -18,16 +18,16 @@ l.basicConfig(filename=log_path, filemode='w',
 sensor_data_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\dataset\VariablesAndSensorsData_2hours.txt"
 
 @task
-def clean_data_task(sensor_data: str) -> pd.DataFrame:
-    data_cleaner = DataCleaning(sensor_data) #object creation
+def clean_data_task(data_cleaner:DataCleaning) -> pd.DataFrame:
+    # data_cleaner = DataCleaning(sensor_data) #object creation
     df = data_cleaner.clean_data()
-    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\clean_data\clean.csv"
+    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\clean_data\clean_DI.csv"
     df.to_csv(output_path, index=False, date_format="%Y-%m-%d %H:%M:%S")
     return df
 
 @task
-def track_transitions_task(df: pd.DataFrame)-> list:
-    data_tracker = DataTracking(df) #object creation
+def track_transitions_task(data_tracker:DataTracking)-> list:
+    # data_tracker = DataTracking(df) #object creation
     transitions = data_tracker.get_sensor_state_transitions()
     for sensor_name, state, timestamp in transitions:
         l.info(f"Sensor: {sensor_name}, State: {state}, Timestamp: {timestamp}")
@@ -41,22 +41,24 @@ def match_and_trace_task(data_tracker: DataTracking) -> pd.DataFrame:
             l.info(f"{key} -> {value}")
     else:
         l.error("match not found")
-    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\tracked_data\match_products.csv"
+    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\tracked_data\match_products_DI.csv"
     match_found.to_csv(output_path, index=False, date_format="%Y-%m-%d %H:%M:%S")
     return match_found
 
 @task
 def create_final_output_task(data_tracker: DataTracking)->pd.DataFrame:
     filtered_op = data_tracker.clear_residue()
-    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\tracked_data\final_output.csv"
+    output_path = r"C:\Users\lenovo.LALITH\Desktop\projects\evsl_tracker\output_data\tracked_data\final_output_DI.csv"
     filtered_op.to_csv(output_path, index=False, date_format="%Y-%m-%d %H:%M:%S")
     return filtered_op
 
 @flow(name="evsl-tracker-flow",retries=2)
 def main():
     start = time.time()
-    df = clean_data_task(sensor_data_path)
-    data_tracker = track_transitions_task(df)
+    data_cleaner = DataCleaning(sensor_data_path)
+    df = clean_data_task(data_cleaner)
+    data_tracker = DataTracking(df)
+    data_tracker = track_transitions_task(data_tracker)
     match_and_trace_task(data_tracker)
     create_final_output_task(data_tracker)
     stop = time.time()
